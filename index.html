@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VueJS Calculator</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <div id="vue-app">
+    <div class="calculator">
+
+        <input type="text" v-model="calculation" id="input-calc"/>
+        <input type="text" v-model="total" id="input-total"/>
+
+        <div class="calculator-buttons">
+          <button v-on:click="clear()"id="AC" on-click="clear"> AC </button>
+          <button v-on:click="key('/')" id="divide"> &divide; </button>
+          <button v-on:click="key('*')" id="times"> &times; </button>
+
+          <button v-on:click="key('7')"> 7 </button>
+          <button v-on:click="key('8')"> 8 </button>
+          <button v-on:click="key('9')"> 9 </button>
+          <button v-on:click="key('-')" id="minus"> &minus; </button>
+
+          <button v-on:click="key('4')"> 4 </button>
+          <button v-on:click="key('5')"> 5 </button>
+          <button v-on:click="key('6')"> 6 </button>
+          <button v-on:click="key('+')" id="plus"> &plus; </button>
+
+          <button v-on:click="key('1')"> 1 </button>
+          <button v-on:click="key('2')"> 2 </button>
+          <button v-on:click="key('3')"> 3 </button>
+
+          <button v-on:click="equal()" id="equals"> &equals; </button>
+          <button v-on:click="key('0')"id="zero"> 0 </button>
+          <button v-on:click="key('.')" id="dot"> . </button>
+
+        </div>
+    </div>
+    </div>
+
+
+    <script src="app.js"></script
+  </body>
+</html>

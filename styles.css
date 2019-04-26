@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(90deg,hsla(196, 100%, 36%, 1),white);
+}
+
+.calculator {
+  max-width: 350px;
+  background: black;
+  margin: 150px auto;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.calculator input {
+  background:none;
+  border:none;
+  box-shadow:none;
+  width:100%;
+  padding:8px;
+  text-align: right;
+  font-size: 20px;
+}
+
+.calculator-buttons{
+  padding:5px;
+  display:grid;
+  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+}
+
+button {
+ background-color: hsla(191, 100%, 36%, 1) ;
+ font-size: 20px;
+ padding: 20px;
+ margin: 1px;
+ border: 1px solid grey;
+ color:white;
+}
+
+button:hover {
+  border: 1px white solid;
+  color:black;
+}
+
+#AC,
+#zero {
+  grid-column: 2 span;
+}
+
+#AC {
+  background-color: hsla(25, 83%, 50%, 1);
+}
+
+#zero, #dot, #divide, #times, #minus, #plus {
+  background-color: grey;
+}
+
+#equals {
+  grid-row: 2 span;
+  background-color: hsla(252, 80%, 47%, 1);
+}
+
+#input-calc {
+  color:hsla(27, 100%, 50%, 1);
+  font-size: 16px;
+}
+
+#input-total {
+  color: white;
+}
